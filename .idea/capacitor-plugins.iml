@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="CheckStyle-IDEA-Module" serialisationVersion="2">
+    <option name="activeLocationsIds" />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.github" />
+      <excludeFolder url="file://$MODULE_DIR$/action-sheet" />
+      <excludeFolder url="file://$MODULE_DIR$/app" />
+      <excludeFolder url="file://$MODULE_DIR$/app-launcher" />
+      <excludeFolder url="file://$MODULE_DIR$/browser" />
+      <excludeFolder url="file://$MODULE_DIR$/camera" />
+      <excludeFolder url="file://$MODULE_DIR$/clipboard" />
+      <excludeFolder url="file://$MODULE_DIR$/device" />
+      <excludeFolder url="file://$MODULE_DIR$/dialog" />
+      <excludeFolder url="file://$MODULE_DIR$/filesystem" />
+      <excludeFolder url="file://$MODULE_DIR$/geolocation" />
+      <excludeFolder url="file://$MODULE_DIR$/haptics" />
+      <excludeFolder url="file://$MODULE_DIR$/keyboard" />
+      <excludeFolder url="file://$MODULE_DIR$/motion" />
+      <excludeFolder url="file://$MODULE_DIR$/network" />
+      <excludeFolder url="file://$MODULE_DIR$/preferences" />
+      <excludeFolder url="file://$MODULE_DIR$/push-notifications" />
+      <excludeFolder url="file://$MODULE_DIR$/screen-orientation" />
+      <excludeFolder url="file://$MODULE_DIR$/screen-reader" />
+      <excludeFolder url="file://$MODULE_DIR$/scripts" />
+      <excludeFolder url="file://$MODULE_DIR$/share" />
+      <excludeFolder url="file://$MODULE_DIR$/splash-screen" />
+      <excludeFolder url="file://$MODULE_DIR$/status-bar" />
+      <excludeFolder url="file://$MODULE_DIR$/text-zoom" />
+      <excludeFolder url="file://$MODULE_DIR$/toast" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
