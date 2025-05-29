@@ -340,8 +340,19 @@ public class LocalNotificationManager {
                 return;
             }
             if (schedule.isRepeating()) {
-                long interval = at.getTime() - new Date().getTime();
-                alarmManager.setRepeating(AlarmManager.RTC, at.getTime(), interval, pendingIntent);
+                // DharmaCode: Allow 'every' to affect the repeating interval so that alarms can
+                // be configured reliably.
+                long interval = schedule.getEvery() != null ?
+                        schedule.getEveryInterval() :
+                        at.getTime() - new Date().getTime();
+                // DharmaCode: Allow alarms to wake up the device using RTC_WAKEUP
+                if (schedule.allowWhileIdle()) {
+                    Logger.info(Logger.tags("LN"),
+                            String.format("Setting repeating alarm at %s with wakeup and intervalMS %d", at, interval));
+                    alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, at.getTime(), interval, pendingIntent);
+                } else {
+                    alarmManager.setRepeating(AlarmManager.RTC, at.getTime(), interval, pendingIntent);
+                }
             } else {
                 setExactIfPossible(alarmManager, schedule, at.getTime(), pendingIntent);
             }
