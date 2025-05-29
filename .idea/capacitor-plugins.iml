@@ -31,6 +31,7 @@
       <excludeFolder url="file://$MODULE_DIR$/status-bar" />
       <excludeFolder url="file://$MODULE_DIR$/text-zoom" />
       <excludeFolder url="file://$MODULE_DIR$/toast" />
+      <excludeFolder url="file://$MODULE_DIR$/local-notifications/dist" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
