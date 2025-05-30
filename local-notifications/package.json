@@ -1,6 +1,6 @@
 {
   "name": "@dharma-code-chris/capacitor-local-notifications",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Fork of @capacitor/local-notifications",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -13,7 +13,7 @@
     "ios/Sources",
     "ios/Tests",
     "Package.swift",
-    "CapacitorLocalNotifications.podspec"
+    "DharmaCodeChrisCapacitorLocalNotifications.podspec"
   ],
   "author": "Chris James",
   "license": "MIT",
@@ -44,7 +44,7 @@
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build",
-    "publish:cocoapod": "pod trunk push ./CapacitorLocalNotifications.podspec --allow-warnings"
+    "publish:cocoapod": "pod trunk push DharmaCodeChrisCapacitorLocalNotifications.podspec --allow-warnings"
   },
   "devDependencies": {
     "@capacitor/android": "next",
