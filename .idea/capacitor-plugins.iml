@@ -22,7 +22,6 @@
       <excludeFolder url="file://$MODULE_DIR$/motion" />
       <excludeFolder url="file://$MODULE_DIR$/network" />
       <excludeFolder url="file://$MODULE_DIR$/preferences" />
-      <excludeFolder url="file://$MODULE_DIR$/push-notifications" />
       <excludeFolder url="file://$MODULE_DIR$/screen-orientation" />
       <excludeFolder url="file://$MODULE_DIR$/screen-reader" />
       <excludeFolder url="file://$MODULE_DIR$/scripts" />
