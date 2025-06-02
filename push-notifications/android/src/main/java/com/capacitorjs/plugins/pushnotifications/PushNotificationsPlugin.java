@@ -238,7 +238,11 @@ public class PushNotificationsPlugin extends Plugin {
         JSObject remoteMessageData = new JSObject();
 
         JSObject data = new JSObject();
-        remoteMessageData.put("id", remoteMessage.getMessageId());
+
+        // DharmaCode: Commented line to fix bug https://github.com/ionic-team/capacitor-plugins/issues/2317
+        // Don't use the server ID. Use the notification ID instead (See below)
+        //remoteMessageData.put("id", remoteMessage.getMessageId());
+
         for (String key : remoteMessage.getData().keySet()) {
             Object value = remoteMessage.getData().get(key);
             data.put(key, value);
@@ -285,6 +289,11 @@ public class PushNotificationsPlugin extends Plugin {
                             channelId,
                             bundle
                         );
+
+                        // DharmaCode: Use the device tag and id instead of the server ID so that
+                        // it is possible to remove delivered notifications.
+                        remoteMessageData.put("tag", notificationInfo.tag);
+                        remoteMessageData.put("id", notificationInfo.id);
 
                         notificationManager.notify(notificationInfo.tag, notificationInfo.id, notificationInfo.notificationBuilder.build());
                     }
