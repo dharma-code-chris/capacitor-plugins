@@ -1,7 +1,7 @@
 {
-  "name": "@capacitor/push-notifications",
-  "version": "7.0.1",
-  "description": "The Push Notifications API provides access to native push notifications.",
+  "name": "@dharma-code-chris/capacitor-push-notifications",
+  "version": "1.0.0",
+  "description": "Fork of @capacitor/push-notifications",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -13,16 +13,16 @@
     "ios/Sources",
     "ios/Tests",
     "Package.swift",
-    "CapacitorPushNotifications.podspec"
+    "DhramaCodeChrisCapacitorPushNotifications.podspec"
   ],
-  "author": "Ionic <hi@ionicframework.com>",
+  "author": "Chris James",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/capacitor-plugins.git"
+    "url": "git+https://github.com/dharma-code-chris/capacitor-plugins.git"
   },
   "bugs": {
-    "url": "https://github.com/ionic-team/capacitor-plugins/issues"
+    "url": "https://github.com/dharma-code-chris/capacitor-plugins/issues"
   },
   "keywords": [
     "capacitor",
@@ -44,7 +44,7 @@
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build",
-    "publish:cocoapod": "pod trunk push ./CapacitorPushNotifications.podspec --allow-warnings"
+    "publish:cocoapod": "pod trunk push DharmaCodeChrisCapacitorPushNotifications.podspec --allow-warnings"
   },
   "devDependencies": {
     "@capacitor/android": "next",
