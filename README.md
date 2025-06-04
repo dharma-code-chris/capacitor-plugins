@@ -8,6 +8,7 @@ changing the Capacitor version to the one used in your project.
 export CAP_PLUGIN_PUBLISH='true'
 export CAPACITOR_VERSION='7.2.0'
 ```
+After editing .zshrc you will need to restart the Gradle daemon.
 
 Then go to `File > Sync Project with Gradle Files`.
 
