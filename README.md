@@ -1,3 +1,18 @@
+// DharmaCode
+### Configuring your environment
+
+This project requires the following lines to be added to `~/.zshrc` (macOS),
+changing the Capacitor version to the one used in your project.
+
+```
+export CAP_PLUGIN_PUBLISH='true'
+export CAPACITOR_VERSION='7.2.0'
+```
+
+Then go to `File > Sync Project with Gradle Files`
+
+// End DharmaCode
+
 # Capacitor Plugins
 
 This repository contains the official Capacitor plugins maintained by the Capacitor team. You can find more plugins in the [Capacitor Community](https://github.com/capacitor-community/).
