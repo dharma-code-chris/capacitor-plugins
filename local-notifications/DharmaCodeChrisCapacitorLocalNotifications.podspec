@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.version = package['version']
   s.summary = package['description']
   s.license = package['license']
-  s.homepage = 'https://capacitorjs.com'
+  s.homepage = 'https://wisdomtimer.com'
   s.author = package['author']
   s.source = { :git => 'https://github.com/dharma-code-chris/capacitor-plugins.git', :tag => package['name'] + '@' + package['version'] }
   s.source_files = 'ios/Sources/**/*.{swift,h,m,c,cc,mm,cpp}', 'local-notifications/ios/Sources/**/*.{swift,h,m,c,cc,mm,cpp}'
